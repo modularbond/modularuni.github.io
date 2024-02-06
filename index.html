@@ -86,10 +86,10 @@
     function applyPulsingEffect(dot) {
         function pulse() {
             dot.transition()
-               .duration(1000) // Duration of the pulse increase
-               .attr("r", 20) // Expanded radius
+               .duration(3000) // Duration of the pulse increase
+               .attr("r", 25) // Expanded radius
                .transition()
-               .duration(1000) // Duration of the pulse decrease
+               .duration(2000) // Duration of the pulse decrease
                .attr("r", dotRadius) // Original radius
                .on("end", pulse); // Loop the animation
         }
